@@ -32,6 +32,8 @@
 		FF32A5782040EEBF00F2F8C3 /* road13.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5642040EEBF00F2F8C3 /* road13.png */; };
 		FF32A5792040EEBF00F2F8C3 /* road12.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5652040EEBF00F2F8C3 /* road12.png */; };
 		FF32A57A2040EEBF00F2F8C3 /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5662040EEBF00F2F8C3 /* road16.png */; };
+		FF32A57E2041A4B100F2F8C3 /* DraggedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */; };
+		FF32A5802041A8D300F2F8C3 /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A57F2041A8D300F2F8C3 /* car0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		FF32A5642040EEBF00F2F8C3 /* road13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road13.png; path = CarGame/Road/road13.png; sourceTree = SOURCE_ROOT; };
 		FF32A5652040EEBF00F2F8C3 /* road12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road12.png; path = CarGame/Road/road12.png; sourceTree = SOURCE_ROOT; };
 		FF32A5662040EEBF00F2F8C3 /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = CarGame/Road/road16.png; sourceTree = SOURCE_ROOT; };
+		FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggedCarView.swift; sourceTree = "<group>"; };
+		FF32A57F2041A8D300F2F8C3 /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = images/car0.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 			children = (
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
 				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
-				FF32A57B2040EED300F2F8C3 /* Road */,
+				FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */,
 				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
+				FF32A57F2041A8D300F2F8C3 /* car0.png */,
+				FF32A57B2040EED300F2F8C3 /* Road */,
 				FF32A5482040E5D800F2F8C3 /* Assets.xcassets */,
 				FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */,
 				FF32A54D2040E5D800F2F8C3 /* Info.plist */,
@@ -208,6 +214,7 @@
 				FF32A56B2040EEBF00F2F8C3 /* road9.png in Resources */,
 				FF32A56D2040EEBF00F2F8C3 /* road3.png in Resources */,
 				FF32A5752040EEBF00F2F8C3 /* road2.png in Resources */,
+				FF32A5802041A8D300F2F8C3 /* car0.png in Resources */,
 				FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */,
 				FF32A56E2040EEBF00F2F8C3 /* road7.png in Resources */,
 				FF32A5682040EEBF00F2F8C3 /* road4.png in Resources */,
@@ -225,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF32A5442040E5D800F2F8C3 /* ViewController.swift in Sources */,
+				FF32A57E2041A4B100F2F8C3 /* DraggedCarView.swift in Sources */,
 				FF32A5422040E5D800F2F8C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,6 +20,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5b-Ml-0v2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-gk-hNW" customClass="DraggedCarView" customModule="CarGame" customModuleProvider="target">
+                                <rect key="frame" x="139" y="489" width="52" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -35,4 +39,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="car0.png" width="382" height="757"/>
+    </resources>
 </document>

@@ -12,6 +12,26 @@
 		FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5452040E5D800F2F8C3 /* Main.storyboard */; };
 		FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5482040E5D800F2F8C3 /* Assets.xcassets */; };
 		FF32A54C2040E5D800F2F8C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */; };
+		FF32A5672040EEBF00F2F8C3 /* road17.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5532040EEBD00F2F8C3 /* road17.png */; };
+		FF32A5682040EEBF00F2F8C3 /* road4.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5542040EEBD00F2F8C3 /* road4.png */; };
+		FF32A5692040EEBF00F2F8C3 /* road15.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5552040EEBD00F2F8C3 /* road15.png */; };
+		FF32A56A2040EEBF00F2F8C3 /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5562040EEBD00F2F8C3 /* road18.png */; };
+		FF32A56B2040EEBF00F2F8C3 /* road9.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5572040EEBD00F2F8C3 /* road9.png */; };
+		FF32A56C2040EEBF00F2F8C3 /* road6.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5582040EEBD00F2F8C3 /* road6.png */; };
+		FF32A56D2040EEBF00F2F8C3 /* road3.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5592040EEBD00F2F8C3 /* road3.png */; };
+		FF32A56E2040EEBF00F2F8C3 /* road7.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A55A2040EEBD00F2F8C3 /* road7.png */; };
+		FF32A56F2040EEBF00F2F8C3 /* road10.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A55B2040EEBE00F2F8C3 /* road10.png */; };
+		FF32A5702040EEBF00F2F8C3 /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A55C2040EEBE00F2F8C3 /* road19.png */; };
+		FF32A5712040EEBF00F2F8C3 /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A55D2040EEBE00F2F8C3 /* road20.png */; };
+		FF32A5722040EEBF00F2F8C3 /* road14.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A55E2040EEBE00F2F8C3 /* road14.png */; };
+		FF32A5732040EEBF00F2F8C3 /* road5.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A55F2040EEBE00F2F8C3 /* road5.png */; };
+		FF32A5742040EEBF00F2F8C3 /* road1.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5602040EEBE00F2F8C3 /* road1.png */; };
+		FF32A5752040EEBF00F2F8C3 /* road2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5612040EEBE00F2F8C3 /* road2.png */; };
+		FF32A5762040EEBF00F2F8C3 /* road8.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5622040EEBE00F2F8C3 /* road8.png */; };
+		FF32A5772040EEBF00F2F8C3 /* road11.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5632040EEBF00F2F8C3 /* road11.png */; };
+		FF32A5782040EEBF00F2F8C3 /* road13.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5642040EEBF00F2F8C3 /* road13.png */; };
+		FF32A5792040EEBF00F2F8C3 /* road12.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5652040EEBF00F2F8C3 /* road12.png */; };
+		FF32A57A2040EEBF00F2F8C3 /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5662040EEBF00F2F8C3 /* road16.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +42,26 @@
 		FF32A5482040E5D800F2F8C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF32A54B2040E5D800F2F8C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF32A54D2040E5D800F2F8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF32A5532040EEBD00F2F8C3 /* road17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road17.png; path = CarGame/Road/road17.png; sourceTree = SOURCE_ROOT; };
+		FF32A5542040EEBD00F2F8C3 /* road4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road4.png; path = CarGame/Road/road4.png; sourceTree = SOURCE_ROOT; };
+		FF32A5552040EEBD00F2F8C3 /* road15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road15.png; path = CarGame/Road/road15.png; sourceTree = SOURCE_ROOT; };
+		FF32A5562040EEBD00F2F8C3 /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = CarGame/Road/road18.png; sourceTree = SOURCE_ROOT; };
+		FF32A5572040EEBD00F2F8C3 /* road9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road9.png; path = CarGame/Road/road9.png; sourceTree = SOURCE_ROOT; };
+		FF32A5582040EEBD00F2F8C3 /* road6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road6.png; path = CarGame/Road/road6.png; sourceTree = SOURCE_ROOT; };
+		FF32A5592040EEBD00F2F8C3 /* road3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road3.png; path = CarGame/Road/road3.png; sourceTree = SOURCE_ROOT; };
+		FF32A55A2040EEBD00F2F8C3 /* road7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road7.png; path = CarGame/Road/road7.png; sourceTree = SOURCE_ROOT; };
+		FF32A55B2040EEBE00F2F8C3 /* road10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road10.png; path = CarGame/Road/road10.png; sourceTree = SOURCE_ROOT; };
+		FF32A55C2040EEBE00F2F8C3 /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = CarGame/Road/road19.png; sourceTree = SOURCE_ROOT; };
+		FF32A55D2040EEBE00F2F8C3 /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = CarGame/Road/road20.png; sourceTree = SOURCE_ROOT; };
+		FF32A55E2040EEBE00F2F8C3 /* road14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road14.png; path = CarGame/Road/road14.png; sourceTree = SOURCE_ROOT; };
+		FF32A55F2040EEBE00F2F8C3 /* road5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road5.png; path = CarGame/Road/road5.png; sourceTree = SOURCE_ROOT; };
+		FF32A5602040EEBE00F2F8C3 /* road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road1.png; path = CarGame/Road/road1.png; sourceTree = SOURCE_ROOT; };
+		FF32A5612040EEBE00F2F8C3 /* road2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road2.png; path = CarGame/Road/road2.png; sourceTree = SOURCE_ROOT; };
+		FF32A5622040EEBE00F2F8C3 /* road8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road8.png; path = CarGame/Road/road8.png; sourceTree = SOURCE_ROOT; };
+		FF32A5632040EEBF00F2F8C3 /* road11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road11.png; path = CarGame/Road/road11.png; sourceTree = SOURCE_ROOT; };
+		FF32A5642040EEBF00F2F8C3 /* road13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road13.png; path = CarGame/Road/road13.png; sourceTree = SOURCE_ROOT; };
+		FF32A5652040EEBF00F2F8C3 /* road12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road12.png; path = CarGame/Road/road12.png; sourceTree = SOURCE_ROOT; };
+		FF32A5662040EEBF00F2F8C3 /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = CarGame/Road/road16.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +96,40 @@
 			children = (
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
 				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
+				FF32A57B2040EED300F2F8C3 /* Road */,
 				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
 				FF32A5482040E5D800F2F8C3 /* Assets.xcassets */,
 				FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */,
 				FF32A54D2040E5D800F2F8C3 /* Info.plist */,
 			);
 			path = CarGame;
+			sourceTree = "<group>";
+		};
+		FF32A57B2040EED300F2F8C3 /* Road */ = {
+			isa = PBXGroup;
+			children = (
+				FF32A5602040EEBE00F2F8C3 /* road1.png */,
+				FF32A5612040EEBE00F2F8C3 /* road2.png */,
+				FF32A5592040EEBD00F2F8C3 /* road3.png */,
+				FF32A5542040EEBD00F2F8C3 /* road4.png */,
+				FF32A55F2040EEBE00F2F8C3 /* road5.png */,
+				FF32A5582040EEBD00F2F8C3 /* road6.png */,
+				FF32A55A2040EEBD00F2F8C3 /* road7.png */,
+				FF32A5622040EEBE00F2F8C3 /* road8.png */,
+				FF32A5572040EEBD00F2F8C3 /* road9.png */,
+				FF32A55B2040EEBE00F2F8C3 /* road10.png */,
+				FF32A5632040EEBF00F2F8C3 /* road11.png */,
+				FF32A5652040EEBF00F2F8C3 /* road12.png */,
+				FF32A5642040EEBF00F2F8C3 /* road13.png */,
+				FF32A55E2040EEBE00F2F8C3 /* road14.png */,
+				FF32A5552040EEBD00F2F8C3 /* road15.png */,
+				FF32A5662040EEBF00F2F8C3 /* road16.png */,
+				FF32A5532040EEBD00F2F8C3 /* road17.png */,
+				FF32A5562040EEBD00F2F8C3 /* road18.png */,
+				FF32A55C2040EEBE00F2F8C3 /* road19.png */,
+				FF32A55D2040EEBE00F2F8C3 /* road20.png */,
+			);
+			path = Road;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +191,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF32A5742040EEBF00F2F8C3 /* road1.png in Resources */,
+				FF32A5772040EEBF00F2F8C3 /* road11.png in Resources */,
+				FF32A56A2040EEBF00F2F8C3 /* road18.png in Resources */,
+				FF32A57A2040EEBF00F2F8C3 /* road16.png in Resources */,
 				FF32A54C2040E5D800F2F8C3 /* LaunchScreen.storyboard in Resources */,
+				FF32A5792040EEBF00F2F8C3 /* road12.png in Resources */,
 				FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */,
+				FF32A5712040EEBF00F2F8C3 /* road20.png in Resources */,
+				FF32A56C2040EEBF00F2F8C3 /* road6.png in Resources */,
+				FF32A5702040EEBF00F2F8C3 /* road19.png in Resources */,
+				FF32A5722040EEBF00F2F8C3 /* road14.png in Resources */,
+				FF32A5732040EEBF00F2F8C3 /* road5.png in Resources */,
+				FF32A5762040EEBF00F2F8C3 /* road8.png in Resources */,
+				FF32A56F2040EEBF00F2F8C3 /* road10.png in Resources */,
+				FF32A56B2040EEBF00F2F8C3 /* road9.png in Resources */,
+				FF32A56D2040EEBF00F2F8C3 /* road3.png in Resources */,
+				FF32A5752040EEBF00F2F8C3 /* road2.png in Resources */,
 				FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */,
+				FF32A56E2040EEBF00F2F8C3 /* road7.png in Resources */,
+				FF32A5682040EEBF00F2F8C3 /* road4.png in Resources */,
+				FF32A5672040EEBF00F2F8C3 /* road17.png in Resources */,
+				FF32A5782040EEBF00F2F8C3 /* road13.png in Resources */,
+				FF32A5692040EEBF00F2F8C3 /* road15.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

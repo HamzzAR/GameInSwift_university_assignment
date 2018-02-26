@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-gk-hNW" customClass="DraggedCarView" customModule="CarGame" customModuleProvider="target">
-                                <rect key="frame" x="139" y="489" width="52" height="109"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-4a-v8O" customClass="DraggedCarView" customModule="CarGame" customModuleProvider="target">
+                                <rect key="frame" x="118" y="465" width="50" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -31,6 +31,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="player" destination="zVV-4a-v8O" id="imm-ci-3Ug"/>
                         <outlet property="roadImages" destination="S5b-Ml-0v2" id="6NC-UO-d8I"/>
                     </connections>
                 </viewController>

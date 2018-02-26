@@ -34,6 +34,12 @@
 		FF32A57A2040EEBF00F2F8C3 /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5662040EEBF00F2F8C3 /* road16.png */; };
 		FF32A57E2041A4B100F2F8C3 /* DraggedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */; };
 		FF32A5802041A8D300F2F8C3 /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A57F2041A8D300F2F8C3 /* car0.png */; };
+		FF32A58720422F7A00F2F8C3 /* car4.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58120422F7900F2F8C3 /* car4.png */; };
+		FF32A58820422F7A00F2F8C3 /* car6.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58220422F7900F2F8C3 /* car6.png */; };
+		FF32A58920422F7A00F2F8C3 /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58320422F7A00F2F8C3 /* car1.png */; };
+		FF32A58A20422F7A00F2F8C3 /* car3.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58420422F7A00F2F8C3 /* car3.png */; };
+		FF32A58B20422F7A00F2F8C3 /* car5.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58520422F7A00F2F8C3 /* car5.png */; };
+		FF32A58C20422F7A00F2F8C3 /* car2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58620422F7A00F2F8C3 /* car2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +72,12 @@
 		FF32A5662040EEBF00F2F8C3 /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = CarGame/Road/road16.png; sourceTree = SOURCE_ROOT; };
 		FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggedCarView.swift; sourceTree = "<group>"; };
 		FF32A57F2041A8D300F2F8C3 /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = images/car0.png; sourceTree = SOURCE_ROOT; };
+		FF32A58120422F7900F2F8C3 /* car4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car4.png; path = "CarGame/obstacle cars/car4.png"; sourceTree = SOURCE_ROOT; };
+		FF32A58220422F7900F2F8C3 /* car6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car6.png; path = "CarGame/obstacle cars/car6.png"; sourceTree = SOURCE_ROOT; };
+		FF32A58320422F7A00F2F8C3 /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car1.png; path = "CarGame/obstacle cars/car1.png"; sourceTree = SOURCE_ROOT; };
+		FF32A58420422F7A00F2F8C3 /* car3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car3.png; path = "CarGame/obstacle cars/car3.png"; sourceTree = SOURCE_ROOT; };
+		FF32A58520422F7A00F2F8C3 /* car5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car5.png; path = "CarGame/obstacle cars/car5.png"; sourceTree = SOURCE_ROOT; };
+		FF32A58620422F7A00F2F8C3 /* car2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car2.png; path = "CarGame/obstacle cars/car2.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 			children = (
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
 				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
+				FF32A58D20422F8A00F2F8C3 /* obstacle cars */,
 				FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */,
 				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
 				FF32A57F2041A8D300F2F8C3 /* car0.png */,
@@ -136,6 +149,19 @@
 				FF32A55D2040EEBE00F2F8C3 /* road20.png */,
 			);
 			path = Road;
+			sourceTree = "<group>";
+		};
+		FF32A58D20422F8A00F2F8C3 /* obstacle cars */ = {
+			isa = PBXGroup;
+			children = (
+				FF32A58320422F7A00F2F8C3 /* car1.png */,
+				FF32A58620422F7A00F2F8C3 /* car2.png */,
+				FF32A58420422F7A00F2F8C3 /* car3.png */,
+				FF32A58120422F7900F2F8C3 /* car4.png */,
+				FF32A58520422F7A00F2F8C3 /* car5.png */,
+				FF32A58220422F7900F2F8C3 /* car6.png */,
+			);
+			path = "obstacle cars";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,13 +225,16 @@
 			files = (
 				FF32A5742040EEBF00F2F8C3 /* road1.png in Resources */,
 				FF32A5772040EEBF00F2F8C3 /* road11.png in Resources */,
+				FF32A58920422F7A00F2F8C3 /* car1.png in Resources */,
 				FF32A56A2040EEBF00F2F8C3 /* road18.png in Resources */,
 				FF32A57A2040EEBF00F2F8C3 /* road16.png in Resources */,
 				FF32A54C2040E5D800F2F8C3 /* LaunchScreen.storyboard in Resources */,
+				FF32A58820422F7A00F2F8C3 /* car6.png in Resources */,
 				FF32A5792040EEBF00F2F8C3 /* road12.png in Resources */,
 				FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */,
 				FF32A5712040EEBF00F2F8C3 /* road20.png in Resources */,
 				FF32A56C2040EEBF00F2F8C3 /* road6.png in Resources */,
+				FF32A58C20422F7A00F2F8C3 /* car2.png in Resources */,
 				FF32A5702040EEBF00F2F8C3 /* road19.png in Resources */,
 				FF32A5722040EEBF00F2F8C3 /* road14.png in Resources */,
 				FF32A5732040EEBF00F2F8C3 /* road5.png in Resources */,
@@ -213,7 +242,10 @@
 				FF32A56F2040EEBF00F2F8C3 /* road10.png in Resources */,
 				FF32A56B2040EEBF00F2F8C3 /* road9.png in Resources */,
 				FF32A56D2040EEBF00F2F8C3 /* road3.png in Resources */,
+				FF32A58720422F7A00F2F8C3 /* car4.png in Resources */,
 				FF32A5752040EEBF00F2F8C3 /* road2.png in Resources */,
+				FF32A58B20422F7A00F2F8C3 /* car5.png in Resources */,
+				FF32A58A20422F7A00F2F8C3 /* car3.png in Resources */,
 				FF32A5802041A8D300F2F8C3 /* car0.png in Resources */,
 				FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */,
 				FF32A56E2040EEBF00F2F8C3 /* road7.png in Resources */,

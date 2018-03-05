@@ -112,11 +112,11 @@
 			children = (
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
 				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
-				FF32A58D20422F8A00F2F8C3 /* obstacle cars */,
 				FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */,
 				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
-				FF32A57F2041A8D300F2F8C3 /* car0.png */,
+				FF32A58D20422F8A00F2F8C3 /* obstacle cars */,
 				FF32A57B2040EED300F2F8C3 /* Road */,
+				FF32A57F2041A8D300F2F8C3 /* car0.png */,
 				FF32A5482040E5D800F2F8C3 /* Assets.xcassets */,
 				FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */,
 				FF32A54D2040E5D800F2F8C3 /* Info.plist */,

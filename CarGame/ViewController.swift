@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 //This protocol explains what actions this delegate will involve.
 protocol subviewDelegate {
@@ -18,9 +19,10 @@ class ViewController: UIViewController, subviewDelegate{
     //Images variables
     @IBOutlet weak var roadImages: UIImageView!
     @IBOutlet weak var player: DraggedCarView!
-    var obstacleCars = UIImageView(image: nil)
     
-
+    ////Create an array
+    var obstacleCars: [UIImage]!
+    
     //Behaviour variables
     var dynamicAnimator: UIDynamicAnimator!
     var collisionBehavior: UICollisionBehavior!
@@ -33,12 +35,19 @@ class ViewController: UIViewController, subviewDelegate{
             NSCopying, for: UIBezierPath(rect: player.frame))
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Assign viewController.swift as the delegate for the flower image view
+
+        //Assign viewController.swift as the delegate for the car image view
         player.myDelegate = self
+        
+        //add all the car images to it
+        obstacleCars = [UIImage(named: "car1.png")!,
+                        UIImage(named: "car2.png")!,
+                        UIImage(named: "car3.png")!,
+                        UIImage(named: "car4.png")!,
+                        UIImage(named: "car5.png")!,
+                        UIImage(named: "car6.png")!]
         
         //Create an array
         //and add all the road images to it
@@ -64,33 +73,18 @@ class ViewController: UIViewController, subviewDelegate{
                       UIImage(named: "road19.png")!,
                       UIImage(named: "road20.png")!]
         
+        
         //animate the road images
-        roadImages?.image = UIImage.animatedImage(with: imageArray, duration: 0.5)
+        roadImages?.image = UIImage.animatedImage(with: imageArray, duration: 0.4)
+    
         
         //START > Behaviour code
         dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
-        
-        //add the obstacle car to the UI
-        obstacleCars.image = UIImage(named: "car1")
-        obstacleCars.frame = CGRect(x: 118, y: -25, width: 30, height: 50)
-        self.view.addSubview(obstacleCars)
     
-        //Make the obstacle car move down
-        dynamicItemBehavior = UIDynamicItemBehavior(items: [obstacleCars])
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 170), for: obstacleCars)
-        dynamicAnimator.addBehavior(dynamicItemBehavior)
+        dynamicItemBehavior = UIDynamicItemBehavior()
+        collisionBehavior = UICollisionBehavior()
         
-        //add items to the collision behaviour
-        collisionBehavior = UICollisionBehavior(items: [obstacleCars])
-        
-        //make the frame of the player car to the collision boundry of the obstacle car
-        collisionBehavior.addBoundary(withIdentifier: "barrier" as
-            NSCopying, for: UIBezierPath(rect: player.frame))
-        
-        collisionBehavior.translatesReferenceBoundsIntoBoundary = true
-        
-        //add the behaviour to the dynamic animator 
-        dynamicAnimator.addBehavior(collisionBehavior)
+        getCar()
         
     }
 
@@ -98,29 +92,30 @@ class ViewController: UIViewController, subviewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func getCar() -> Void {
+        
+        //add all the obstacles cars to the display
+            let oCar = UIImageView(image: nil)
+            oCar.image = obstacleCars[1]
+            oCar.frame = CGRect(x: 100, y: 0, width: 30, height: 50)
+            self.view.addSubview(oCar)
+        
+            dynamicItemBehavior.addItem(oCar)
+            
+            //Make the obstacle cars move down
+            dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 170), for: oCar)
+            dynamicAnimator.addBehavior(dynamicItemBehavior)
+        
+            collisionBehavior.addItem(oCar)
+            
+            //add the behaviour to the dynamic animator
+            dynamicAnimator.addBehavior(collisionBehavior)
+        
+        
+        
+        }
+    
 }
-
-///////////////////////////////////////////////////////////////////////////////
-////Create a new UIImageView from scratch
-//let carView = UIImageView(image: nil)
-//
-////Assign an image to the image view
-//carView.image = UIImage(named: "car1.png")
-//
-////Assign the size and position of the image view
-//carView.frame = CGRect(x:100, y: 100, width: 30, height: 50)
-//
-//self.view.addSubview(carView)
-
-//let random = Int(arc4random_uniform(UInt32(self.view.bounds.width)))
-
-
-//
-//        var obstacleCarArray: [UIImage]!
-//            obstacleCarArray = [UIImage(named: "car1.png")!,
-//                                UIImage(named: "car2.png")!,
-//                                UIImage(named: "car3.png")!,
-//                                UIImage(named: "car4.png")!,
-//                                UIImage(named: "car5.png")!,
-//                                UIImage(named: "car6.png")!]
 

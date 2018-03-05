@@ -20,7 +20,7 @@ class ViewController: UIViewController, subviewDelegate{
     @IBOutlet weak var roadImages: UIImageView!
     @IBOutlet weak var player: DraggedCarView!
     
-    ////Create an array
+    //obstacle cars variables
     var obstacleCars: [UIImage]!
     
     //Behaviour variables
@@ -41,7 +41,6 @@ class ViewController: UIViewController, subviewDelegate{
         //Assign viewController.swift as the delegate for the car image view
         player.myDelegate = self
         
-        //add all the car images to it
         obstacleCars = [UIImage(named: "car1.png")!,
                         UIImage(named: "car2.png")!,
                         UIImage(named: "car3.png")!,
@@ -76,15 +75,17 @@ class ViewController: UIViewController, subviewDelegate{
         
         //animate the road images
         roadImages?.image = UIImage.animatedImage(with: imageArray, duration: 0.4)
-    
+        
+        
+       
+        let date = Date().addingTimeInterval(0.5)
+        let timer = Timer(fireAt: date, interval: 1.7, target: self, selector: #selector(getCar), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
         
         //START > Behaviour code
         dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
-    
         dynamicItemBehavior = UIDynamicItemBehavior()
         collisionBehavior = UICollisionBehavior()
-        
-        getCar()
         
     }
 
@@ -94,7 +95,7 @@ class ViewController: UIViewController, subviewDelegate{
     }
     
     
-    func getCar() -> Void {
+    @objc func getCar() -> Void {
         
         //add all the obstacles cars to the display
             let oCar = UIImageView(image: nil)

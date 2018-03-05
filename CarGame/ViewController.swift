@@ -76,8 +76,7 @@ class ViewController: UIViewController, subviewDelegate{
         //animate the road images
         roadImages?.image = UIImage.animatedImage(with: imageArray, duration: 0.4)
         
-        
-       
+    
         let date = Date().addingTimeInterval(0.5)
         let timer = Timer(fireAt: date, interval: 1.7, target: self, selector: #selector(getCar), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
@@ -97,6 +96,10 @@ class ViewController: UIViewController, subviewDelegate{
     
     @objc func getCar() -> Void {
         
+        let many = Int(arc4random_uniform(3))
+        //Randomely select how many cars will appear at the same time out of three 
+        for _ in 0...many {
+            
             //add all the obstacles cars to the display
             let oCar = UIImageView(image: nil)
             let random = Int(arc4random_uniform(UInt32(243))) + 53
@@ -118,7 +121,8 @@ class ViewController: UIViewController, subviewDelegate{
             
             //add the behaviour to the dynamic animator
             dynamicAnimator.addBehavior(collisionBehavior)
-        
+            
+        }
         
         
         }

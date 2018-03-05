@@ -99,9 +99,10 @@ class ViewController: UIViewController, subviewDelegate{
         
             //add all the obstacles cars to the display
             let oCar = UIImageView(image: nil)
+            let random = Int(arc4random_uniform(UInt32(243))) + 53
             let c = Int(arc4random_uniform(6))
             oCar.image = obstacleCars[c]
-            oCar.frame = CGRect(x: 100, y: 0, width: 30, height: 50)
+            oCar.frame = CGRect(x: random, y: 0, width: 30, height: 50)
             self.view.addSubview(oCar)
             
             

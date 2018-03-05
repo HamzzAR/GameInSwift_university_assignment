@@ -97,18 +97,22 @@ class ViewController: UIViewController, subviewDelegate{
     
     @objc func getCar() -> Void {
         
-        //add all the obstacles cars to the display
+            //add all the obstacles cars to the display
             let oCar = UIImageView(image: nil)
-            oCar.image = obstacleCars[1]
+            let c = Int(arc4random_uniform(6))
+            oCar.image = obstacleCars[c]
             oCar.frame = CGRect(x: 100, y: 0, width: 30, height: 50)
             self.view.addSubview(oCar)
-        
+            
+            
             dynamicItemBehavior.addItem(oCar)
             
             //Make the obstacle cars move down
-            dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 170), for: oCar)
+            let speed = Int(arc4random_uniform(140)) + 120
+            dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: speed), for: oCar)
             dynamicAnimator.addBehavior(dynamicItemBehavior)
-        
+            
+            
             collisionBehavior.addItem(oCar)
             
             //add the behaviour to the dynamic animator

@@ -40,6 +40,7 @@
 		FF32A58A20422F7A00F2F8C3 /* car3.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58420422F7A00F2F8C3 /* car3.png */; };
 		FF32A58B20422F7A00F2F8C3 /* car5.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58520422F7A00F2F8C3 /* car5.png */; };
 		FF32A58C20422F7A00F2F8C3 /* car2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF32A58620422F7A00F2F8C3 /* car2.png */; };
+		FFA78A94204DD2280049ECC2 /* game_over.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFA78A93204DD2280049ECC2 /* game_over.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		FF32A58420422F7A00F2F8C3 /* car3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car3.png; path = "CarGame/obstacle cars/car3.png"; sourceTree = SOURCE_ROOT; };
 		FF32A58520422F7A00F2F8C3 /* car5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car5.png; path = "CarGame/obstacle cars/car5.png"; sourceTree = SOURCE_ROOT; };
 		FF32A58620422F7A00F2F8C3 /* car2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car2.png; path = "CarGame/obstacle cars/car2.png"; sourceTree = SOURCE_ROOT; };
+		FFA78A93204DD2280049ECC2 /* game_over.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = game_over.jpg; path = images/game_over.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
 				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
+				FFA78A93204DD2280049ECC2 /* game_over.jpg */,
 				FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */,
 				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
 				FF32A58D20422F8A00F2F8C3 /* obstacle cars */,
@@ -242,6 +245,7 @@
 				FF32A56F2040EEBF00F2F8C3 /* road10.png in Resources */,
 				FF32A56B2040EEBF00F2F8C3 /* road9.png in Resources */,
 				FF32A56D2040EEBF00F2F8C3 /* road3.png in Resources */,
+				FFA78A94204DD2280049ECC2 /* game_over.jpg in Resources */,
 				FF32A58720422F7A00F2F8C3 /* car4.png in Resources */,
 				FF32A5752040EEBF00F2F8C3 /* road2.png in Resources */,
 				FF32A58B20422F7A00F2F8C3 /* car5.png in Resources */,

@@ -15,17 +15,22 @@ protocol subviewDelegate {
 }
 
 class ViewController: UIViewController, subviewDelegate{
+    var timer = Timer()
     
     //Images variables
     @IBOutlet weak var roadImages: UIImageView!
     @IBOutlet weak var player: DraggedCarView!
     
+    
     //display score and score variable
     @IBOutlet weak var displayScore: UILabel!
-    var score = 0
+  
+    let over = UIImageView(image: nil)
+    let button = UIButton(frame: CGRect(x: 220, y: 470, width: 100, height: 50))
     
     //obstacle cars variables
     var obstacleCars: [UIImage]!
+    var passedCars: [UIImageView] = []
     
     //Behaviour variables
     var dynamicAnimator: UIDynamicAnimator!
@@ -37,6 +42,8 @@ class ViewController: UIViewController, subviewDelegate{
         //make the frame of the player car to the collision boundry of the obstacle car
         collisionBehavior.addBoundary(withIdentifier: "barrier" as
             NSCopying, for: UIBezierPath(rect: player.frame))
+        
+        
     }
     
     
@@ -84,14 +91,11 @@ class ViewController: UIViewController, subviewDelegate{
         
     
         let date = Date().addingTimeInterval(0.5)
-        let timer = Timer(fireAt: date, interval: 1.7, target: self, selector: #selector(getCar), userInfo: nil, repeats: true)
+        timer = Timer(fireAt: date, interval: 1.7, target: self, selector: #selector(getCar), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
         
+        startTime()
         
-        let when = DispatchTime.now() + 20
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            self.gameOver(timer: timer)
-        }
         
         //START > Behaviour code
         dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
@@ -103,6 +107,13 @@ class ViewController: UIViewController, subviewDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func startTime() -> Void {
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.gameOver()
+        }
     }
     
     
@@ -121,8 +132,7 @@ class ViewController: UIViewController, subviewDelegate{
             oCar.frame = CGRect(x: random, y: 0, width: 30, height: 50)
             self.view.addSubview(oCar)
             
-            score = score + 1
-            displayScore.text = String(score)
+            passedCars.append(oCar)
    
             dynamicItemBehavior.addItem(oCar)
             
@@ -140,14 +150,37 @@ class ViewController: UIViewController, subviewDelegate{
         
         }
     
-    func gameOver(timer: Timer) -> Void {
+    func gameOver() -> Void {
         timer.invalidate() //Stop the loop that calls the getCar function
-        let over = UIImageView(image: nil)
+        timer.invalidate()
         over.image = UIImage(named: "game_over.jpg")
         over.frame = UIScreen.main.bounds
         self.view.addSubview(over)
-        
+
         self.view.bringSubview(toFront: over)
+
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 10
+        button.setTitleColor(.black, for: UIControlState.normal)
+        button.setTitle("Play Again", for: [])
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(button)
+        
+    }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        over.removeFromSuperview()
+        button.removeFromSuperview()
+        for view in passedCars {
+            view.removeFromSuperview()
+        }
+        passedCars = []
+        startTime()
+        let date = Date().addingTimeInterval(0.5)
+        timer = Timer(fireAt: date, interval: 1.7, target: self, selector: #selector(getCar), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+        
+       
     }
     
 }

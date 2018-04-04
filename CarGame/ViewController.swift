@@ -15,6 +15,7 @@ protocol subviewDelegate {
 }
 
 class ViewController: UIViewController, subviewDelegate{
+    //Make time global
     var timer = Timer()
     
     //Images variables
@@ -24,9 +25,12 @@ class ViewController: UIViewController, subviewDelegate{
     
     //display score and score variable
     @IBOutlet weak var displayScore: UILabel!
-  
+    var score = 0
+    
+    //Game over image view
     let over = UIImageView(image: nil)
-    let button = UIButton(frame: CGRect(x: 220, y: 470, width: 100, height: 50))
+    //Play again button
+    let button = UIButton(frame: CGRect(x: 90, y: 410, width: 200, height: 70))
     
     //obstacle cars variables
     var obstacleCars: [UIImage]!
@@ -43,8 +47,27 @@ class ViewController: UIViewController, subviewDelegate{
         collisionBehavior.addBoundary(withIdentifier: "barrier" as
             NSCopying, for: UIBezierPath(rect: player.frame))
         
+        //Make the score color white
+        displayScore.textColor = .white
         
+        //Go through the passed cars and if it inersects with player car then score-1
+        //else if it crosses the botton screen then score+1
+        for view in passedCars {
+            if (view.frame.intersects(player.frame)) {
+                score = score - 1
+            } else {
+                if view.center.y > UIScreen.main.bounds.height - 5 &&
+                    view.center.y < UIScreen.main.bounds.height + 5 {
+                    score = score + 1
+                    
+                }
+            }
+            //Display score
+            displayScore.text = "Score: "+String(score)
+
+        }
     }
+    
     
     
     override func viewDidLoad() {
@@ -53,12 +76,14 @@ class ViewController: UIViewController, subviewDelegate{
         //Assign viewController.swift as the delegate for the car image view
         player.myDelegate = self
         
+        //Array with all the obstacles
         obstacleCars = [UIImage(named: "car1.png")!,
                         UIImage(named: "car2.png")!,
                         UIImage(named: "car3.png")!,
                         UIImage(named: "car4.png")!,
                         UIImage(named: "car5.png")!,
                         UIImage(named: "car6.png")!]
+        
         
         //Create an array
         //and add all the road images to it
@@ -90,10 +115,12 @@ class ViewController: UIViewController, subviewDelegate{
         roadImages?.image = UIImage.animatedImage(with: imageArray, duration: 0.4)
         
     
+        //Timer loop, which calls the getCar() func every 1.7 secs
         let date = Date().addingTimeInterval(0.5)
         timer = Timer(fireAt: date, interval: 1.7, target: self, selector: #selector(getCar), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
         
+        //Start the timer for game over
         startTime()
         
         
@@ -109,8 +136,9 @@ class ViewController: UIViewController, subviewDelegate{
         // Dispose of any resources that can be recreated.
     }
     
+    //when the timer ends, gameOver func will be called
     func startTime() -> Void {
-        let when = DispatchTime.now() + 2
+        let when = DispatchTime.now() + 20
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.gameOver()
         }
@@ -118,13 +146,13 @@ class ViewController: UIViewController, subviewDelegate{
     
     
     @objc func getCar() -> Void {
-        
-        
         let many = Int(arc4random_uniform(3))
+        
         //Randomely select how many cars will appear at the same time out of three
         for _ in 0...many {
             
-            //add all the obstacles cars to the display
+            //choose a random obstacle car and
+            //add the obstacle car to the display
             let oCar = UIImageView(image: nil)
             let random = Int(arc4random_uniform(UInt32(243))) + 53
             let c = Int(arc4random_uniform(6))
@@ -132,6 +160,8 @@ class ViewController: UIViewController, subviewDelegate{
             oCar.frame = CGRect(x: random, y: 0, width: 30, height: 50)
             self.view.addSubview(oCar)
             
+            //append the obstacel car to the passedCars array
+            //which will be used later
             passedCars.append(oCar)
    
             dynamicItemBehavior.addItem(oCar)
@@ -146,13 +176,17 @@ class ViewController: UIViewController, subviewDelegate{
             //add the behaviour to the dynamic animator
             dynamicAnimator.addBehavior(collisionBehavior)
             
+            
         }
         
-        }
-    
+    }
+
+    //Show the game over image
+    //Stop the timer loop
+    //Display the play again button
     func gameOver() -> Void {
         timer.invalidate() //Stop the loop that calls the getCar function
-        timer.invalidate()
+        
         over.image = UIImage(named: "game_over.jpg")
         over.frame = UIScreen.main.bounds
         self.view.addSubview(over)
@@ -168,6 +202,12 @@ class ViewController: UIViewController, subviewDelegate{
         
     }
     
+    //when the play again button is pressed
+    //remove game over image from the superview
+    //remove the play again button from the superview
+    //remove all the cars from the superview
+    //reset the passed cars array
+    //reset the timer loop
     @objc func buttonAction(sender: UIButton!) {
         over.removeFromSuperview()
         button.removeFromSuperview()

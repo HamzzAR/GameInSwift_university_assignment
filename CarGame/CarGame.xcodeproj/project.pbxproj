@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF32A5422040E5D800F2F8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */; };
+		FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5452040E5D800F2F8C3 /* Main.storyboard */; };
+		FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5482040E5D800F2F8C3 /* Assets.xcassets */; };
+		FF32A54C2040E5D800F2F8C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */; };
+		FF32A57E2041A4B100F2F8C3 /* DraggedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */; };
+		FFAF45122087C55900622535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32A5432040E5D800F2F8C3 /* ViewController.swift */; };
+		FFAF46322087CB6100622535 /* road10.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF461E2087CB5F00622535 /* road10.png */; };
+		FFAF46332087CB6100622535 /* road12.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF461F2087CB5F00622535 /* road12.png */; };
+		FFAF46342087CB6100622535 /* road4.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46202087CB5F00622535 /* road4.png */; };
+		FFAF46352087CB6100622535 /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46212087CB5F00622535 /* road20.png */; };
+		FFAF46362087CB6100622535 /* road2.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46222087CB5F00622535 /* road2.png */; };
+		FFAF46372087CB6100622535 /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46232087CB5F00622535 /* road18.png */; };
+		FFAF46382087CB6100622535 /* road8.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46242087CB6000622535 /* road8.png */; };
+		FFAF46392087CB6100622535 /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46252087CB6000622535 /* road19.png */; };
+		FFAF463A2087CB6100622535 /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46262087CB6000622535 /* road16.png */; };
+		FFAF463B2087CB6100622535 /* road13.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46272087CB6000622535 /* road13.png */; };
+		FFAF463C2087CB6100622535 /* road5.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46282087CB6000622535 /* road5.png */; };
+		FFAF463D2087CB6100622535 /* road6.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46292087CB6000622535 /* road6.png */; };
+		FFAF463E2087CB6100622535 /* road3.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF462A2087CB6000622535 /* road3.png */; };
+		FFAF463F2087CB6100622535 /* road15.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF462B2087CB6000622535 /* road15.png */; };
+		FFAF46402087CB6100622535 /* road9.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF462C2087CB6000622535 /* road9.png */; };
+		FFAF46412087CB6100622535 /* road14.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF462D2087CB6000622535 /* road14.png */; };
+		FFAF46422087CB6100622535 /* road17.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF462E2087CB6100622535 /* road17.png */; };
+		FFAF46432087CB6100622535 /* road11.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF462F2087CB6100622535 /* road11.png */; };
+		FFAF46442087CB6100622535 /* road7.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46302087CB6100622535 /* road7.png */; };
+		FFAF46452087CB6100622535 /* road1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46312087CB6100622535 /* road1.png */; };
+		FFAF46482087CBB000622535 /* carCrash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46472087CBAF00622535 /* carCrash.mp3 */; };
+		FFAF464A2087CBCA00622535 /* game_over.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46492087CBCA00622535 /* game_over.jpg */; };
+		FFAF46552087CCC800622535 /* car9.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464C2087CCC700622535 /* car9.png */; };
+		FFAF46562087CCC800622535 /* car4.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464D2087CCC700622535 /* car4.png */; };
+		FFAF46572087CCC800622535 /* car6.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464E2087CCC700622535 /* car6.png */; };
+		FFAF46582087CCC800622535 /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464F2087CCC700622535 /* car1.png */; };
+		FFAF46592087CCC800622535 /* car8.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46502087CCC700622535 /* car8.png */; };
+		FFAF465A2087CCC800622535 /* car3.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46512087CCC800622535 /* car3.png */; };
+		FFAF465B2087CCC800622535 /* car2.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46522087CCC800622535 /* car2.png */; };
+		FFAF465C2087CCC800622535 /* car7.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46532087CCC800622535 /* car7.png */; };
+		FFAF465D2087CCC800622535 /* car5.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46542087CCC800622535 /* car5.png */; };
+		FFAF46692087E21900622535 /* man4.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46652087E21900622535 /* man4.png */; };
+		FFAF466A2087E21900622535 /* man2.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46662087E21900622535 /* man2.png */; };
+		FFAF466B2087E21900622535 /* man3.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46672087E21900622535 /* man3.png */; };
+		FFAF466C2087E21900622535 /* man1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46682087E21900622535 /* man1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		FFAF46642087D2B200622535 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		FF32A53E2040E5D800F2F8C3 /* CarGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF32A5432040E5D800F2F8C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF32A5462040E5D800F2F8C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF32A5482040E5D800F2F8C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF32A54B2040E5D800F2F8C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggedCarView.swift; sourceTree = "<group>"; };
+		FFAF461E2087CB5F00622535 /* road10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road10.png; path = Road/road10.png; sourceTree = "<group>"; };
+		FFAF461F2087CB5F00622535 /* road12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road12.png; path = Road/road12.png; sourceTree = "<group>"; };
+		FFAF46202087CB5F00622535 /* road4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road4.png; path = Road/road4.png; sourceTree = "<group>"; };
+		FFAF46212087CB5F00622535 /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = Road/road20.png; sourceTree = "<group>"; };
+		FFAF46222087CB5F00622535 /* road2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road2.png; path = Road/road2.png; sourceTree = "<group>"; };
+		FFAF46232087CB5F00622535 /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = Road/road18.png; sourceTree = "<group>"; };
+		FFAF46242087CB6000622535 /* road8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road8.png; path = Road/road8.png; sourceTree = "<group>"; };
+		FFAF46252087CB6000622535 /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = Road/road19.png; sourceTree = "<group>"; };
+		FFAF46262087CB6000622535 /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = Road/road16.png; sourceTree = "<group>"; };
+		FFAF46272087CB6000622535 /* road13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road13.png; path = Road/road13.png; sourceTree = "<group>"; };
+		FFAF46282087CB6000622535 /* road5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road5.png; path = Road/road5.png; sourceTree = "<group>"; };
+		FFAF46292087CB6000622535 /* road6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road6.png; path = Road/road6.png; sourceTree = "<group>"; };
+		FFAF462A2087CB6000622535 /* road3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road3.png; path = Road/road3.png; sourceTree = "<group>"; };
+		FFAF462B2087CB6000622535 /* road15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road15.png; path = Road/road15.png; sourceTree = "<group>"; };
+		FFAF462C2087CB6000622535 /* road9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road9.png; path = Road/road9.png; sourceTree = "<group>"; };
+		FFAF462D2087CB6000622535 /* road14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road14.png; path = Road/road14.png; sourceTree = "<group>"; };
+		FFAF462E2087CB6100622535 /* road17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road17.png; path = Road/road17.png; sourceTree = "<group>"; };
+		FFAF462F2087CB6100622535 /* road11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road11.png; path = Road/road11.png; sourceTree = "<group>"; };
+		FFAF46302087CB6100622535 /* road7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road7.png; path = Road/road7.png; sourceTree = "<group>"; };
+		FFAF46312087CB6100622535 /* road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road1.png; path = Road/road1.png; sourceTree = "<group>"; };
+		FFAF46472087CBAF00622535 /* carCrash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = carCrash.mp3; path = ../carCrash.mp3; sourceTree = "<group>"; };
+		FFAF46492087CBCA00622535 /* game_over.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = game_over.jpg; path = ../images/game_over.jpg; sourceTree = "<group>"; };
+		FFAF464C2087CCC700622535 /* car9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car9.png; sourceTree = "<group>"; };
+		FFAF464D2087CCC700622535 /* car4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car4.png; sourceTree = "<group>"; };
+		FFAF464E2087CCC700622535 /* car6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car6.png; sourceTree = "<group>"; };
+		FFAF464F2087CCC700622535 /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car1.png; sourceTree = "<group>"; };
+		FFAF46502087CCC700622535 /* car8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car8.png; sourceTree = "<group>"; };
+		FFAF46512087CCC800622535 /* car3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car3.png; sourceTree = "<group>"; };
+		FFAF46522087CCC800622535 /* car2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car2.png; sourceTree = "<group>"; };
+		FFAF46532087CCC800622535 /* car7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car7.png; sourceTree = "<group>"; };
+		FFAF46542087CCC800622535 /* car5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car5.png; sourceTree = "<group>"; };
+		FFAF46622087CFFC00622535 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFAF46652087E21900622535 /* man4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man4.png; sourceTree = "<group>"; };
+		FFAF46662087E21900622535 /* man2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man2.png; sourceTree = "<group>"; };
+		FFAF46672087E21900622535 /* man3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man3.png; sourceTree = "<group>"; };
+		FFAF46682087E21900622535 /* man1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF32A53B2040E5D800F2F8C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF32A5352040E5D800F2F8C3 = {
+			isa = PBXGroup;
+			children = (
+				FF32A5402040E5D800F2F8C3 /* CarGame */,
+				FF32A53F2040E5D800F2F8C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF32A53F2040E5D800F2F8C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF32A53E2040E5D800F2F8C3 /* CarGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF32A5402040E5D800F2F8C3 /* CarGame */ = {
+			isa = PBXGroup;
+			children = (
+				FFAF46492087CBCA00622535 /* game_over.jpg */,
+				FFAF46472087CBAF00622535 /* carCrash.mp3 */,
+				FFAF46462087CB6C00622535 /* Road */,
+				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
+				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
+				FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */,
+				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
+				FFAF464B2087CC5800622535 /* Man */,
+				FF32A58D20422F8A00F2F8C3 /* obstacle cars */,
+				FF32A5482040E5D800F2F8C3 /* Assets.xcassets */,
+				FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */,
+				FFAF46622087CFFC00622535 /* Info.plist */,
+			);
+			name = CarGame;
+			sourceTree = "<group>";
+		};
+		FF32A58D20422F8A00F2F8C3 /* obstacle cars */ = {
+			isa = PBXGroup;
+			children = (
+				FFAF464F2087CCC700622535 /* car1.png */,
+				FFAF46522087CCC800622535 /* car2.png */,
+				FFAF46512087CCC800622535 /* car3.png */,
+				FFAF464D2087CCC700622535 /* car4.png */,
+				FFAF46542087CCC800622535 /* car5.png */,
+				FFAF464E2087CCC700622535 /* car6.png */,
+				FFAF46532087CCC800622535 /* car7.png */,
+				FFAF46502087CCC700622535 /* car8.png */,
+				FFAF464C2087CCC700622535 /* car9.png */,
+			);
+			path = "obstacle cars";
+			sourceTree = "<group>";
+		};
+		FFAF46462087CB6C00622535 /* Road */ = {
+			isa = PBXGroup;
+			children = (
+				FFAF46312087CB6100622535 /* road1.png */,
+				FFAF46222087CB5F00622535 /* road2.png */,
+				FFAF462A2087CB6000622535 /* road3.png */,
+				FFAF46202087CB5F00622535 /* road4.png */,
+				FFAF46282087CB6000622535 /* road5.png */,
+				FFAF46292087CB6000622535 /* road6.png */,
+				FFAF46302087CB6100622535 /* road7.png */,
+				FFAF46242087CB6000622535 /* road8.png */,
+				FFAF462C2087CB6000622535 /* road9.png */,
+				FFAF461E2087CB5F00622535 /* road10.png */,
+				FFAF462F2087CB6100622535 /* road11.png */,
+				FFAF461F2087CB5F00622535 /* road12.png */,
+				FFAF46272087CB6000622535 /* road13.png */,
+				FFAF462B2087CB6000622535 /* road15.png */,
+				FFAF46262087CB6000622535 /* road16.png */,
+				FFAF46252087CB6000622535 /* road19.png */,
+				FFAF46212087CB5F00622535 /* road20.png */,
+				FFAF462D2087CB6000622535 /* road14.png */,
+				FFAF462E2087CB6100622535 /* road17.png */,
+				FFAF46232087CB5F00622535 /* road18.png */,
+			);
+			name = Road;
+			sourceTree = "<group>";
+		};
+		FFAF464B2087CC5800622535 /* Man */ = {
+			isa = PBXGroup;
+			children = (
+				FFAF46682087E21900622535 /* man1.png */,
+				FFAF46662087E21900622535 /* man2.png */,
+				FFAF46672087E21900622535 /* man3.png */,
+				FFAF46652087E21900622535 /* man4.png */,
+			);
+			path = Man;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF32A53D2040E5D800F2F8C3 /* CarGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF32A5502040E5D800F2F8C3 /* Build configuration list for PBXNativeTarget "CarGame" */;
+			buildPhases = (
+				FF32A53A2040E5D800F2F8C3 /* Sources */,
+				FF32A53B2040E5D800F2F8C3 /* Frameworks */,
+				FF32A53C2040E5D800F2F8C3 /* Resources */,
+			);
+			buildRules = (
+				FFAF46642087D2B200622535 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = CarGame;
+			productName = CarGame;
+			productReference = FF32A53E2040E5D800F2F8C3 /* CarGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF32A5362040E5D800F2F8C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Hamza;
+				TargetAttributes = {
+					FF32A53D2040E5D800F2F8C3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FF32A5392040E5D800F2F8C3 /* Build configuration list for PBXProject "CarGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF32A5352040E5D800F2F8C3;
+			productRefGroup = FF32A53F2040E5D800F2F8C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF32A53D2040E5D800F2F8C3 /* CarGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF32A53C2040E5D800F2F8C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAF466B2087E21900622535 /* man3.png in Resources */,
+				FFAF46482087CBB000622535 /* carCrash.mp3 in Resources */,
+				FFAF46552087CCC800622535 /* car9.png in Resources */,
+				FFAF46392087CB6100622535 /* road19.png in Resources */,
+				FFAF465A2087CCC800622535 /* car3.png in Resources */,
+				FFAF464A2087CBCA00622535 /* game_over.jpg in Resources */,
+				FFAF46322087CB6100622535 /* road10.png in Resources */,
+				FFAF46452087CB6100622535 /* road1.png in Resources */,
+				FFAF46442087CB6100622535 /* road7.png in Resources */,
+				FFAF46332087CB6100622535 /* road12.png in Resources */,
+				FFAF46362087CB6100622535 /* road2.png in Resources */,
+				FFAF463B2087CB6100622535 /* road13.png in Resources */,
+				FFAF466C2087E21900622535 /* man1.png in Resources */,
+				FFAF463C2087CB6100622535 /* road5.png in Resources */,
+				FFAF46592087CCC800622535 /* car8.png in Resources */,
+				FFAF465B2087CCC800622535 /* car2.png in Resources */,
+				FF32A54C2040E5D800F2F8C3 /* LaunchScreen.storyboard in Resources */,
+				FFAF463D2087CB6100622535 /* road6.png in Resources */,
+				FFAF46692087E21900622535 /* man4.png in Resources */,
+				FFAF46432087CB6100622535 /* road11.png in Resources */,
+				FFAF46402087CB6100622535 /* road9.png in Resources */,
+				FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */,
+				FFAF46572087CCC800622535 /* car6.png in Resources */,
+				FFAF465D2087CCC800622535 /* car5.png in Resources */,
+				FFAF46562087CCC800622535 /* car4.png in Resources */,
+				FFAF46382087CB6100622535 /* road8.png in Resources */,
+				FFAF463E2087CB6100622535 /* road3.png in Resources */,
+				FFAF465C2087CCC800622535 /* car7.png in Resources */,
+				FFAF46372087CB6100622535 /* road18.png in Resources */,
+				FFAF463A2087CB6100622535 /* road16.png in Resources */,
+				FFAF46422087CB6100622535 /* road17.png in Resources */,
+				FFAF466A2087E21900622535 /* man2.png in Resources */,
+				FFAF46352087CB6100622535 /* road20.png in Resources */,
+				FFAF46412087CB6100622535 /* road14.png in Resources */,
+				FFAF46582087CCC800622535 /* car1.png in Resources */,
+				FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */,
+				FFAF46342087CB6100622535 /* road4.png in Resources */,
+				FFAF463F2087CB6100622535 /* road15.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF32A53A2040E5D800F2F8C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAF45122087C55900622535 /* ViewController.swift in Sources */,
+				FF32A57E2041A4B100F2F8C3 /* DraggedCarView.swift in Sources */,
+				FF32A5422040E5D800F2F8C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF32A5452040E5D800F2F8C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF32A5462040E5D800F2F8C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF32A54A2040E5D800F2F8C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF32A54B2040E5D800F2F8C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF32A54E2040E5D800F2F8C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF32A54F2040E5D800F2F8C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF32A5512040E5D800F2F8C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CarGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF32A5522040E5D800F2F8C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CarGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF32A5392040E5D800F2F8C3 /* Build configuration list for PBXProject "CarGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32A54E2040E5D800F2F8C3 /* Debug */,
+				FF32A54F2040E5D800F2F8C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF32A5502040E5D800F2F8C3 /* Build configuration list for PBXNativeTarget "CarGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32A5512040E5D800F2F8C3 /* Debug */,
+				FF32A5522040E5D800F2F8C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF32A5362040E5D800F2F8C3 /* Project object */;
+}

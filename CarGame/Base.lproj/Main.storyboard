@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-4a-v8O" customClass="DraggedCarView" customModule="CarGame" customModuleProvider="target">
-                                <rect key="frame" x="118" y="465" width="53" height="101"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man1.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-4a-v8O" customClass="DraggedCarView" customModule="CarGame" customModuleProvider="target">
+                                <rect key="frame" x="118" y="500" width="55" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-2Q-2Ib">
@@ -49,6 +49,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="car0.png" width="382" height="757"/>
+        <image name="man1.png" width="59" height="67"/>
     </resources>
 </document>

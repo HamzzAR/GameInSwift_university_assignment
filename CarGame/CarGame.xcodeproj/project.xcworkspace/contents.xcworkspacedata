@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Man/man2.png">
+   </FileRef>
+   <FileRef
+      location = "group:../Man/man1.png">
+   </FileRef>
+   <FileRef
+      location = "group:../Man/man3.png">
+   </FileRef>
+   <FileRef
+      location = "group:../Man/man4.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

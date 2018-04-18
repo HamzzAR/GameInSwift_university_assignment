@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import AVFoundation
 
 //This protocol explains what actions this delegate will involve.
 protocol subviewDelegate {
@@ -15,8 +16,13 @@ protocol subviewDelegate {
 }
 
 class ViewController: UIViewController, subviewDelegate{
+    var manArray: [UIImage]!
+    
     //Make time global
     var timer = Timer()
+    
+    //Crash sound variable
+    var crashSound: AVAudioPlayer?
     
     //Images variables
     @IBOutlet weak var roadImages: UIImageView!
@@ -55,6 +61,16 @@ class ViewController: UIViewController, subviewDelegate{
         for view in passedCars {
             if (view.frame.intersects(player.frame)) {
                 score = score - 1
+                
+                let path = Bundle.main.path(forResource: "carCrash.mp3", ofType:nil)!
+                let url = URL(fileURLWithPath: path)
+                do {
+                    crashSound = try AVAudioPlayer(contentsOf: url)
+                    crashSound?.play()
+                } catch {
+                    // couldn't load file :(
+                }
+                
             } else {
                 if view.center.y > UIScreen.main.bounds.height - 5 &&
                     view.center.y < UIScreen.main.bounds.height + 5 {
@@ -82,7 +98,10 @@ class ViewController: UIViewController, subviewDelegate{
                         UIImage(named: "car3.png")!,
                         UIImage(named: "car4.png")!,
                         UIImage(named: "car5.png")!,
-                        UIImage(named: "car6.png")!]
+                        UIImage(named: "car6.png")!,
+                        UIImage(named: "car7.png")!,
+                        UIImage(named: "car8.png")!,
+                        UIImage(named: "car9.png")!]
         
         
         //Create an array
@@ -109,11 +128,16 @@ class ViewController: UIViewController, subviewDelegate{
                       UIImage(named: "road19.png")!,
                       UIImage(named: "road20.png")!]
         
-        
-        
         //animate the road images
         roadImages?.image = UIImage.animatedImage(with: imageArray, duration: 0.4)
         
+        manArray = [UIImage(named: "man1.png")!,
+                    UIImage(named: "man2.png")!,
+                    UIImage(named: "man3.png")!,
+                    UIImage(named: "man4.png")!]
+        
+        //animate the man array images
+        player?.image = UIImage.animatedImage(with: manArray, duration: 0.4)
     
         //Timer loop, which calls the getCar() func every 1.7 secs
         let date = Date().addingTimeInterval(0.5)
@@ -142,11 +166,12 @@ class ViewController: UIViewController, subviewDelegate{
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.gameOver()
         }
+        
     }
     
     
     @objc func getCar() -> Void {
-        let many = Int(arc4random_uniform(3))
+        let many = Int(arc4random_uniform(4))
         
         //Randomely select how many cars will appear at the same time out of three
         for _ in 0...many {

@@ -21,6 +21,9 @@ class ViewController: UIViewController, subviewDelegate{
     let bt = UIImageView(image: nil)
     let boss = UIImageView(image: nil)
     
+    let bt2 = UIImageView(image: nil)
+    let boss2 = UIImageView(image: nil)
+    
     
     //Make time global
     var timer = Timer()
@@ -86,7 +89,7 @@ class ViewController: UIViewController, subviewDelegate{
    
         
         //if is player is hit by bomb, then game over
-        if bt.frame.intersects(player.frame) {
+        if bt.frame.intersects(player.frame) || bt2.frame.intersects(player.frame) {
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver")
             self.show(secondViewController!, sender: nil)
         }
@@ -188,6 +191,12 @@ class ViewController: UIViewController, subviewDelegate{
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.bosss()
             
+            let when = DispatchTime.now() + 6
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.bosss2()
+                
+            }
+            
         }
         
         
@@ -209,7 +218,7 @@ class ViewController: UIViewController, subviewDelegate{
             
             
             self.dynamicItemBehavior.addItem(self.bt)
-            self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 180), for: self.bt)
+            self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 230), for: self.bt)
             self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
             
             let when = DispatchTime.now() + 2
@@ -221,6 +230,35 @@ class ViewController: UIViewController, subviewDelegate{
         }
         
     
+    }
+    
+    func bosss2() -> Void {
+        self.boss2.image = UIImage(named: "rocketMan.png")
+        let random = Int(arc4random_uniform(UInt32(243))) + 53
+        self.boss2.frame = CGRect(x: random, y: 10, width: 55, height: 66)
+        self.view.addSubview(self.boss2)
+        
+        
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.bt2.image = UIImage(named: "bullet.png")
+            self.bt2.frame = CGRect(x: random, y: 15, width: 16, height: 29)
+            self.view.addSubview(self.bt2)
+            
+            
+            self.dynamicItemBehavior.addItem(self.bt2)
+            self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 230), for: self.bt2)
+            self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
+            
+            let when = DispatchTime.now() + 2
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.boss2.removeFromSuperview()
+            }
+            
+            
+        }
+        
+        
     }
     
     

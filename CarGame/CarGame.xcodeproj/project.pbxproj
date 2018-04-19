@@ -34,7 +34,6 @@
 		FFAF46442087CB6100622535 /* road7.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46302087CB6100622535 /* road7.png */; };
 		FFAF46452087CB6100622535 /* road1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46312087CB6100622535 /* road1.png */; };
 		FFAF46482087CBB000622535 /* carCrash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46472087CBAF00622535 /* carCrash.mp3 */; };
-		FFAF464A2087CBCA00622535 /* game_over.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46492087CBCA00622535 /* game_over.jpg */; };
 		FFAF46552087CCC800622535 /* car9.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464C2087CCC700622535 /* car9.png */; };
 		FFAF46562087CCC800622535 /* car4.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464D2087CCC700622535 /* car4.png */; };
 		FFAF46572087CCC800622535 /* car6.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF464E2087CCC700622535 /* car6.png */; };
@@ -48,6 +47,19 @@
 		FFAF466A2087E21900622535 /* man2.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46662087E21900622535 /* man2.png */; };
 		FFAF466B2087E21900622535 /* man3.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46672087E21900622535 /* man3.png */; };
 		FFAF466C2087E21900622535 /* man1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46682087E21900622535 /* man1.png */; };
+		FFAF466F2087E3BD00622535 /* rocketMan.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF466D2087E3BD00622535 /* rocketMan.png */; };
+		FFAF46722087E77600622535 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46712087E77600622535 /* bullet.png */; };
+		FFAF46742087EAE100622535 /* Bomb+2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46732087EAE100622535 /* Bomb+2.mp3 */; };
+		FFAF46762087F33E00622535 /* san.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46752087F33E00622535 /* san.mp3 */; };
+		FFAF468220880F9E00622535 /* start1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFAF468120880F9E00622535 /* start1.jpg */; };
+		FFAF46842088114100622535 /* startButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46832088114000622535 /* startButton.png */; };
+		FFAF46862088192000622535 /* game_over.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFAF46852088192000622535 /* game_over.jpg */; };
+		FFAF468820881A6500622535 /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF468720881A6500622535 /* replay.png */; };
+		FFAF468A20881C7700622535 /* wasted.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF468920881C7700622535 /* wasted.png */; };
+		FFAF468C20881EC000622535 /* dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAF468B20881EBF00622535 /* dead.mp3 */; };
+		FFAF468E2088260E00622535 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAF468D2088260E00622535 /* map.png */; };
+		FFAF46942088EA9E00622535 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF46932088EA9E00622535 /* GameOver.swift */; };
+		FFAF46962088F42300622535 /* startPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF46952088F42300622535 /* startPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -91,7 +103,6 @@
 		FFAF46302087CB6100622535 /* road7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road7.png; path = Road/road7.png; sourceTree = "<group>"; };
 		FFAF46312087CB6100622535 /* road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road1.png; path = Road/road1.png; sourceTree = "<group>"; };
 		FFAF46472087CBAF00622535 /* carCrash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = carCrash.mp3; path = ../carCrash.mp3; sourceTree = "<group>"; };
-		FFAF46492087CBCA00622535 /* game_over.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = game_over.jpg; path = ../images/game_over.jpg; sourceTree = "<group>"; };
 		FFAF464C2087CCC700622535 /* car9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car9.png; sourceTree = "<group>"; };
 		FFAF464D2087CCC700622535 /* car4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car4.png; sourceTree = "<group>"; };
 		FFAF464E2087CCC700622535 /* car6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car6.png; sourceTree = "<group>"; };
@@ -106,6 +117,19 @@
 		FFAF46662087E21900622535 /* man2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man2.png; sourceTree = "<group>"; };
 		FFAF46672087E21900622535 /* man3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man3.png; sourceTree = "<group>"; };
 		FFAF46682087E21900622535 /* man1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man1.png; sourceTree = "<group>"; };
+		FFAF466D2087E3BD00622535 /* rocketMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rocketMan.png; path = ../rocketMan.png; sourceTree = "<group>"; };
+		FFAF46712087E77600622535 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bullet.png; path = ../bullet.png; sourceTree = "<group>"; };
+		FFAF46732087EAE100622535 /* Bomb+2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bomb+2.mp3"; path = "../Bomb+2.mp3"; sourceTree = "<group>"; };
+		FFAF46752087F33E00622535 /* san.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = san.mp3; path = ../san.mp3; sourceTree = "<group>"; };
+		FFAF468120880F9E00622535 /* start1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = start1.jpg; path = ../start1.jpg; sourceTree = "<group>"; };
+		FFAF46832088114000622535 /* startButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = startButton.png; path = ../startButton.png; sourceTree = "<group>"; };
+		FFAF46852088192000622535 /* game_over.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = game_over.jpg; path = ../game_over.jpg; sourceTree = "<group>"; };
+		FFAF468720881A6500622535 /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = replay.png; path = ../replay.png; sourceTree = "<group>"; };
+		FFAF468920881C7700622535 /* wasted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wasted.png; path = ../wasted.png; sourceTree = "<group>"; };
+		FFAF468B20881EBF00622535 /* dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dead.mp3; path = ../dead.mp3; sourceTree = "<group>"; };
+		FFAF468D2088260E00622535 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../map.png; sourceTree = "<group>"; };
+		FFAF46932088EA9E00622535 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		FFAF46952088F42300622535 /* startPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +146,19 @@
 		FF32A5352040E5D800F2F8C3 = {
 			isa = PBXGroup;
 			children = (
+				FFAF46952088F42300622535 /* startPage.swift */,
+				FFAF46932088EA9E00622535 /* GameOver.swift */,
+				FFAF468D2088260E00622535 /* map.png */,
+				FFAF468B20881EBF00622535 /* dead.mp3 */,
+				FFAF468920881C7700622535 /* wasted.png */,
+				FFAF468720881A6500622535 /* replay.png */,
+				FFAF46852088192000622535 /* game_over.jpg */,
+				FFAF46832088114000622535 /* startButton.png */,
+				FFAF468120880F9E00622535 /* start1.jpg */,
+				FFAF46752087F33E00622535 /* san.mp3 */,
+				FFAF46732087EAE100622535 /* Bomb+2.mp3 */,
+				FFAF46712087E77600622535 /* bullet.png */,
+				FFAF466D2087E3BD00622535 /* rocketMan.png */,
 				FF32A5402040E5D800F2F8C3 /* CarGame */,
 				FF32A53F2040E5D800F2F8C3 /* Products */,
 			);
@@ -138,7 +175,6 @@
 		FF32A5402040E5D800F2F8C3 /* CarGame */ = {
 			isa = PBXGroup;
 			children = (
-				FFAF46492087CBCA00622535 /* game_over.jpg */,
 				FFAF46472087CBAF00622535 /* carCrash.mp3 */,
 				FFAF46462087CB6C00622535 /* Road */,
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
@@ -273,13 +309,17 @@
 				FFAF46552087CCC800622535 /* car9.png in Resources */,
 				FFAF46392087CB6100622535 /* road19.png in Resources */,
 				FFAF465A2087CCC800622535 /* car3.png in Resources */,
-				FFAF464A2087CBCA00622535 /* game_over.jpg in Resources */,
 				FFAF46322087CB6100622535 /* road10.png in Resources */,
 				FFAF46452087CB6100622535 /* road1.png in Resources */,
 				FFAF46442087CB6100622535 /* road7.png in Resources */,
+				FFAF46762087F33E00622535 /* san.mp3 in Resources */,
+				FFAF46862088192000622535 /* game_over.jpg in Resources */,
 				FFAF46332087CB6100622535 /* road12.png in Resources */,
 				FFAF46362087CB6100622535 /* road2.png in Resources */,
+				FFAF46842088114100622535 /* startButton.png in Resources */,
 				FFAF463B2087CB6100622535 /* road13.png in Resources */,
+				FFAF46742087EAE100622535 /* Bomb+2.mp3 in Resources */,
+				FFAF468220880F9E00622535 /* start1.jpg in Resources */,
 				FFAF466C2087E21900622535 /* man1.png in Resources */,
 				FFAF463C2087CB6100622535 /* road5.png in Resources */,
 				FFAF46592087CCC800622535 /* car8.png in Resources */,
@@ -288,22 +328,28 @@
 				FFAF463D2087CB6100622535 /* road6.png in Resources */,
 				FFAF46692087E21900622535 /* man4.png in Resources */,
 				FFAF46432087CB6100622535 /* road11.png in Resources */,
+				FFAF468E2088260E00622535 /* map.png in Resources */,
 				FFAF46402087CB6100622535 /* road9.png in Resources */,
 				FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */,
 				FFAF46572087CCC800622535 /* car6.png in Resources */,
 				FFAF465D2087CCC800622535 /* car5.png in Resources */,
 				FFAF46562087CCC800622535 /* car4.png in Resources */,
+				FFAF468A20881C7700622535 /* wasted.png in Resources */,
 				FFAF46382087CB6100622535 /* road8.png in Resources */,
+				FFAF466F2087E3BD00622535 /* rocketMan.png in Resources */,
 				FFAF463E2087CB6100622535 /* road3.png in Resources */,
 				FFAF465C2087CCC800622535 /* car7.png in Resources */,
 				FFAF46372087CB6100622535 /* road18.png in Resources */,
+				FFAF468820881A6500622535 /* replay.png in Resources */,
 				FFAF463A2087CB6100622535 /* road16.png in Resources */,
 				FFAF46422087CB6100622535 /* road17.png in Resources */,
 				FFAF466A2087E21900622535 /* man2.png in Resources */,
 				FFAF46352087CB6100622535 /* road20.png in Resources */,
 				FFAF46412087CB6100622535 /* road14.png in Resources */,
 				FFAF46582087CCC800622535 /* car1.png in Resources */,
+				FFAF468C20881EC000622535 /* dead.mp3 in Resources */,
 				FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */,
+				FFAF46722087E77600622535 /* bullet.png in Resources */,
 				FFAF46342087CB6100622535 /* road4.png in Resources */,
 				FFAF463F2087CB6100622535 /* road15.png in Resources */,
 			);
@@ -317,8 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAF45122087C55900622535 /* ViewController.swift in Sources */,
+				FFAF46962088F42300622535 /* startPage.swift in Sources */,
 				FF32A57E2041A4B100F2F8C3 /* DraggedCarView.swift in Sources */,
 				FF32A5422040E5D800F2F8C3 /* AppDelegate.swift in Sources */,
+				FFAF46942088EA9E00622535 /* GameOver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

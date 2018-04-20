@@ -13,6 +13,8 @@ class GameOver: UIViewController{
     
     @IBOutlet weak var replatBtn: UIImageView!
     var die: AVAudioPlayer?
+    @IBOutlet weak var tScore: UILabel!
+    var score = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,11 @@ class GameOver: UIViewController{
             die = try AVAudioPlayer(contentsOf: url)
             die?.play()
         } catch {}
+    
+        
+        
+        tScore.text = score
+      
         
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(buttonAction))
         replatBtn.addGestureRecognizer(tap1)

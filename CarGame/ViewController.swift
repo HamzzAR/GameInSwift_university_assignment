@@ -31,6 +31,7 @@ class ViewController: UIViewController, subviewDelegate{
     
     //Crash sound variable
     var crashSound: AVAudioPlayer?
+    var rock: AVAudioPlayer?
     
     //Images variables
     @IBOutlet weak var roadImages: UIImageView!
@@ -82,7 +83,7 @@ class ViewController: UIViewController, subviewDelegate{
                 }
             }
             //Display score
-            displayScore.text = "$"+String(score)
+            displayScore.text = String(score)
 
         }
         
@@ -90,6 +91,13 @@ class ViewController: UIViewController, subviewDelegate{
         
         //if is player is hit by bomb, then game over
         if bt.frame.intersects(player.frame) || bt2.frame.intersects(player.frame) {
+            let myVC = storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOver
+            myVC.score = String(score)
+            
+            self.show(myVC, sender: nil)
+           
+            
+            
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver")
             self.show(secondViewController!, sender: nil)
         }
@@ -168,6 +176,11 @@ class ViewController: UIViewController, subviewDelegate{
     func startTime() -> Void {
         let when = DispatchTime.now() + 20
         DispatchQueue.main.asyncAfter(deadline: when) {
+            let myVC = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOver
+            myVC.score = String(self.score)
+            
+            self.show(myVC, sender: nil)
+            
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver")
             self.show(secondViewController!, sender: nil)
         }
@@ -191,7 +204,7 @@ class ViewController: UIViewController, subviewDelegate{
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.bosss()
             
-            let when = DispatchTime.now() + 6
+            let when = DispatchTime.now() + 8
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.bosss2()
                 
@@ -221,6 +234,16 @@ class ViewController: UIViewController, subviewDelegate{
             self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 230), for: self.bt)
             self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
             
+            let path = Bundle.main.path(forResource: "rocketLaunch.mp3", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
+            do {
+                self.rock = try AVAudioPlayer(contentsOf: url)
+                self.rock?.play()
+            } catch {
+                // couldn't load file :(
+            }
+            
+            
             let when = DispatchTime.now() + 2
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.boss.removeFromSuperview()
@@ -249,6 +272,15 @@ class ViewController: UIViewController, subviewDelegate{
             self.dynamicItemBehavior.addItem(self.bt2)
             self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 230), for: self.bt2)
             self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
+            
+            let path = Bundle.main.path(forResource: "rocketLaunch.mp3", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
+            do {
+                self.rock = try AVAudioPlayer(contentsOf: url)
+                self.rock?.play()
+            } catch {
+                // couldn't load file :(
+            }
             
             let when = DispatchTime.now() + 2
             DispatchQueue.main.asyncAfter(deadline: when) {
@@ -297,6 +329,7 @@ class ViewController: UIViewController, subviewDelegate{
         }
         
     }
+
     
 }
 

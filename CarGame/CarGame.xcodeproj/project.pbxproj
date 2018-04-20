@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF294EAE20898E32003BC55F /* score1.png in Resources */ = {isa = PBXBuildFile; fileRef = FF294EAD20898E32003BC55F /* score1.png */; };
+		FF294EB020899464003BC55F /* rocketLaunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF294EAF20899464003BC55F /* rocketLaunch.mp3 */; };
 		FF32A5422040E5D800F2F8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */; };
 		FF32A5472040E5D800F2F8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5452040E5D800F2F8C3 /* Main.storyboard */; };
 		FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32A5482040E5D800F2F8C3 /* Assets.xcassets */; };
@@ -75,6 +77,8 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		FF294EAD20898E32003BC55F /* score1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = score1.png; path = ../score1.png; sourceTree = "<group>"; };
+		FF294EAF20899464003BC55F /* rocketLaunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rocketLaunch.mp3; path = ../rocketLaunch.mp3; sourceTree = "<group>"; };
 		FF32A53E2040E5D800F2F8C3 /* CarGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF32A5432040E5D800F2F8C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,8 +150,9 @@
 		FF32A5352040E5D800F2F8C3 = {
 			isa = PBXGroup;
 			children = (
+				FF294EAF20899464003BC55F /* rocketLaunch.mp3 */,
+				FF294EAD20898E32003BC55F /* score1.png */,
 				FFAF46952088F42300622535 /* startPage.swift */,
-				FFAF46932088EA9E00622535 /* GameOver.swift */,
 				FFAF468D2088260E00622535 /* map.png */,
 				FFAF468B20881EBF00622535 /* dead.mp3 */,
 				FFAF468920881C7700622535 /* wasted.png */,
@@ -178,6 +183,7 @@
 				FFAF46472087CBAF00622535 /* carCrash.mp3 */,
 				FFAF46462087CB6C00622535 /* Road */,
 				FF32A5412040E5D800F2F8C3 /* AppDelegate.swift */,
+				FFAF46932088EA9E00622535 /* GameOver.swift */,
 				FF32A5432040E5D800F2F8C3 /* ViewController.swift */,
 				FF32A57D2041A4B100F2F8C3 /* DraggedCarView.swift */,
 				FF32A5452040E5D800F2F8C3 /* Main.storyboard */,
@@ -333,6 +339,7 @@
 				FF32A5492040E5D800F2F8C3 /* Assets.xcassets in Resources */,
 				FFAF46572087CCC800622535 /* car6.png in Resources */,
 				FFAF465D2087CCC800622535 /* car5.png in Resources */,
+				FF294EAE20898E32003BC55F /* score1.png in Resources */,
 				FFAF46562087CCC800622535 /* car4.png in Resources */,
 				FFAF468A20881C7700622535 /* wasted.png in Resources */,
 				FFAF46382087CB6100622535 /* road8.png in Resources */,
@@ -352,6 +359,7 @@
 				FFAF46722087E77600622535 /* bullet.png in Resources */,
 				FFAF46342087CB6100622535 /* road4.png in Resources */,
 				FFAF463F2087CB6100622535 /* road15.png in Resources */,
+				FF294EB020899464003BC55F /* rocketLaunch.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
